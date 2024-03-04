@@ -1,8 +1,8 @@
 const fs = require('fs');
-let sum = 0
-let combined = 0
 
 module.exports.log = function(dir) {
+  let sum = 0
+  let combined = 0
   const { open } = require('node:fs/promises');
   (async () => {
     const file = await open(dir);

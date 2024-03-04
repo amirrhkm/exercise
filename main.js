@@ -5,7 +5,19 @@
 
 var dir = require('./calcSum');
 
-dir.log('./inputFile/magic_number.txt')
+dir.log('./inputFile/magic_num_1.txt')
+
+module.exports.log = function(sum) {
+    console.log(sum)
+}
+
+dir.log('./inputFile/magic_num_2.txt')
+
+module.exports.log = function(sum) {
+    console.log(sum)
+}
+
+dir.log('./inputFile/magic_num_3.txt')
 
 module.exports.log = function(sum) {
     console.log(sum)
