@@ -22,11 +22,17 @@
 // module.exports.log = function(sum) {
 //     console.log(sum)
 // }
-import fs from 'fs';
-
-export let dir = './inputFile/magic_num_1.txt';
+import { readdir } from 'node:fs/promises';
 import {dataDisplay} from './calcSumEs6.mjs'
+export const pathToDir = './inputFile'
+export const path = await readdir(pathToDir);
+console.log(path)
+await dataDisplay();
 
-(async () => {
-    dataDisplay();
-})();
+
+
+// fs.readdir(pathToDir, (error, files) => {
+//     for(let i = 0; i < files.length; i++) {
+//         console.log(files[i])
+//     }
+// })
