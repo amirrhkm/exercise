@@ -1,19 +1,18 @@
 const fs = require('fs');
 
 module.exports.log = function(dir) {
-  let sum = 0
-  let combined = 0
+  var sum = 0
+  var combined = 0
   const { open } = require('node:fs/promises');
   (async () => {
     const file = await open(dir);
 
     for await (const line of file.readLines()) {
       //console.log(`\n${line}`)
-      count = 0
-      digit = []
+      let count = 0
+      let digit = []
       //console.log('\nnumbers in line :-')
-      for(let i = 0; i < line.length; i++) {
-          let single = line.charAt(i)
+      for(const single of line) {
           if(single >= '0' && single <= '9') {
               digit[count] = single
               //console.log(digit[count])
