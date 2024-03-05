@@ -21,7 +21,7 @@ export async function dataDisplay() {
             combined = digit[0] + digit[digit.length-1]
             sum = sum + Number(combined)
             });
-            console.log(sum)
+            console.log(`${path[i]} : ${sum}`)
         }
         
     } catch (err) {
