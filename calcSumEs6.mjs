@@ -1,13 +1,13 @@
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
+import {dir} from './mainEs6.mjs'
 
-var combined;
-var sum = 0;
-
-function dataDisplay() {
+export async function dataDisplay() {
+    var combined;
+    var sum = 0;
     try {
-        const filePath = resolve('./inputFile/magic_num_3.txt');
-        const contents = readFile(filePath,'utf8');
+        const filePath = resolve(dir);
+        const contents = await readFile(filePath,'utf8');
         contents.split(/\n/).forEach(line =>  {
             let count = 0
             let digit = []
@@ -19,10 +19,9 @@ function dataDisplay() {
             }
         combined = digit[0] + digit[digit.length-1]
         sum = sum + Number(combined)
-        console.log(sum)
         });
+        console.log(sum)
     } catch (err) {
         console.error(err.message);
     }
 }
-dataDisplay();

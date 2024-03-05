@@ -22,7 +22,11 @@
 // module.exports.log = function(sum) {
 //     console.log(sum)
 // }
-let dir = './inputFile/magic_num_3.txt';
-export {dir as dir};
+import fs from 'fs';
 
-import sum from "./calcSumEs6.js";
+export let dir = './inputFile/magic_num_1.txt';
+import {dataDisplay} from './calcSumEs6.mjs'
+
+(async () => {
+    dataDisplay();
+})();
