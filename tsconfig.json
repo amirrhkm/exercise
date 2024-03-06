@@ -26,7 +26,7 @@
   ],
   "typedocOptions": {
     "entryPoints": [
-      "lib/mainTsc.ts"
+      "lib/main.ts"
     ],
     "out": "docs"
   }
