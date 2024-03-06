@@ -19,7 +19,7 @@
   },
   "include": [
     "lib/**/*"
-  ],
+, "jest.config.js"  ],
   "exclude": [
     "node_modules",
     "dist"
