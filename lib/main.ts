@@ -1,12 +1,9 @@
-import fs from 'fs';
-export const pathToDir = './inputFile'
-export const path = fs.readdirSync(pathToDir);
 import { readfile } from './readfile'
 import { compNum } from './compNum';
 import { sumNum } from './sumNum';
 
 async function run() {
-    const lineCont = await readfile("magic_num_3.txt")
+    const lineCont = await readfile("magic_num_1.txt")
     const lineNum = compNum(lineCont)
     const sum = sumNum(lineNum)
     
