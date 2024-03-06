@@ -1,9 +1,11 @@
-import {describe, expect} from "@jest/globals"
-import {readfile} from "./readfile";
+import { describe, expect } from '@jest/globals'
+import { readfile } from './readfile'
 
-let testarr = [1,2,3,4,5]
-describe("readfile function test", () => {
-    test('test', () => {
-        expect(readfile()).toBe();
-    })
+
+const mockans = ['abc', 'def', 'hij', 'klm']
+const mockfile = 'D:/nodejs.magicnum/inputFile/testnum.txt'
+describe('readfile function test', () => {
+  test('test', async() => {
+    expect(await readfile(mockfile)).toBe(mockans)
+  })
 })

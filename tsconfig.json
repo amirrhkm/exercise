@@ -2,9 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "lib": [
-      "es7"
-    ],
+    "lib": ["es7"],
     "declaration": true,
     "sourceMap": true,
     "declarationDir": "./dist",
@@ -17,17 +15,10 @@
     "emitDecoratorMetadata": true,
     "moduleResolution": "node"
   },
-  "include": [
-    "lib/**/*"
-, "jest.config.js"  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "include": ["lib/**/*", "jest.config.js"],
+  "exclude": ["node_modules", "dist"],
   "typedocOptions": {
-    "entryPoints": [
-      "lib/main.ts"
-    ],
+    "entryPoints": ["lib/main.ts"],
     "out": "docs"
   }
 }

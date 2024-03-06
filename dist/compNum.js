@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.compNum = void 0;
 function compNum(lineCont) {
-    let combined = "";
+    let combined = '';
     const lineNum = [];
     for (let i of lineCont) {
         let num = [];

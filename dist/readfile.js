@@ -15,9 +15,9 @@ const node_path_1 = require("node:path");
 function readfile(filename) {
     return __awaiter(this, void 0, void 0, function* () {
         let contLine = [];
-        const filePath = (0, node_path_1.resolve)("./inputFile", filename);
+        const filePath = (0, node_path_1.resolve)('./inputFile', filename);
         const cont = yield (0, promises_1.readFile)(filePath, 'utf8');
-        cont.split(/\n/).forEach(line => {
+        cont.split(/\r\n/).forEach(line => {
             contLine.push(line);
         });
         return contLine;

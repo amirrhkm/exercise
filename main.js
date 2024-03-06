@@ -1,9 +1,8 @@
-
 // module.exports = {dir}
 // const output = require('/calcSum');
 // console.log(`Output: ${require('./calcSum')}`)
 
-var dir = require('../calcSum');
+var dir = require('../calcSum')
 
 // dir.log('./inputFile/magic_num_1.txt')
 
@@ -19,6 +18,6 @@ var dir = require('../calcSum');
 
 dir.log('./inputFile/magic_num_3.txt')
 
-module.exports.log = function(sum) {
-    console.log(sum)
+module.exports.log = function (sum) {
+  console.log(sum)
 }
