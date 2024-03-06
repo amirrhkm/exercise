@@ -1,6 +1,5 @@
-import {readdir} from 'node:fs/promises';
+import fs from 'fs';
 export const pathToDir = './inputFile'
-export const path = readdir(pathToDir);
-
-import {dataDisplay} from './calcSumTsc'
-dataDisplay();
+export const path = fs.readdirSync(pathToDir);
+import {run} from './calcSumTsc'
+run()

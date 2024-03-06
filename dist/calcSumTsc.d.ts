@@ -1,1 +1,1 @@
-export declare function dataDisplay(): Promise<void>;
+export declare function run(): Promise<void>;
