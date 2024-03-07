@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.ts",
+  "publishConfig": {
+    "amir.nurhakim:registry":" https://gitlab.com/api/v4/projects/688/packages/npm/"
+  },
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint --ext .js,.ts",
