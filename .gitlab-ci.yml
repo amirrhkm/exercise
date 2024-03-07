@@ -1,11 +1,11 @@
 stages:
-  - install
+  - before_script
   - test
 
 install:
-  stage: install
+  stage: before_script
   script:
-    - npm i
+    - npm install
 
 test:
   stage: test
