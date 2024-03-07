@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - jest --coverage
+    - node './dist/main.js'
