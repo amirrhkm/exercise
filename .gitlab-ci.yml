@@ -13,4 +13,3 @@ javascript:
       - npm run format
     before_script:
       - npm i --save-dev
-      - npm ci
