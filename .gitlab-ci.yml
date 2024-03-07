@@ -8,5 +8,6 @@ test:
   script:
     - npm run test
   before_script:
+    - chmod u+w node_modules
     - npm i
     - npm i jest
