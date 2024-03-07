@@ -1,1 +1,1 @@
-export declare function sumNum(lineNum: number[]): number;
+export declare function sumNum(lineNum: number[]): number

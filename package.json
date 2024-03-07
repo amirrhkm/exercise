@@ -4,16 +4,17 @@
   "description": "",
   "main": "main.ts",
   "publishConfig": {
-    "amir.nurhakim:registry":" https://gitlab.com/api/v4/projects/688/packages/npm/"
+    "amir.nurhakim:registry": " https://gitlab.com/api/v4/projects/688/packages/npm/"
   },
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint --ext .js,.ts",
-    "format": "prettier --write \"**/*.+(js|ts|json)\""
+    "format": "prettier --write \"**/*.+(js|ts|json)\"",
+    "main":"node dist/main.js"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {  
+  "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
