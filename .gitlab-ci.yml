@@ -1,28 +1,17 @@
-image: node:latest
+javascript:  
+  image: node:latest
 
-stages:
-  - test
+  stages:
+    - test
 
-test:
-  stage: test
-  script:
-    - npm run tsc
-    - npm run main
-    - npm run lint --fix
-    - npm run format
-  before_script:
-    - npm i --save-dev
-    - npm i typescript
-    - npm i ts-jest
-    - npm i prettier
-    - npm i jest
-    - npm i eslint
-    - npm i eslint-config-standard-with-typescript
-    - npm i eslint-plugin-import
-    - npm i eslint-plugin-n
-    - npm i eslint-plugin-promise
-    - npm i @jest/globals
-    - npm i @types/jest
-    - npm i @types/node
-    - npm i @typescript-eslint/eslint-plugin
-    - npm i @typescript-eslint/parser
+  test:
+    stage: test
+    script:
+      - npm run tsc
+      - npm run main
+      - npm run lint --fix
+      - npm run format
+    before_script:
+      - npm i --save-dev
+      - npm ci
+      - cd onboard__
