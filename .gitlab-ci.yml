@@ -9,3 +9,4 @@ test:
     - npm run test
   before_script:
     - npm i
+    - npm i jest
