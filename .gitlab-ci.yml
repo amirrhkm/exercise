@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - tsc
+    - node './dist/main.js'
+
+test:
+  stage: test
+  script:
+    - npm run format
+    - npm run eslint --fix
+    - jest --coverage
