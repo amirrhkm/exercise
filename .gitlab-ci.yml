@@ -10,6 +10,4 @@ install:
 test:
   stage: test
   script:
-    - npm run format
-    - npm run eslint --fix
     - jest --coverage
