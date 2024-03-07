@@ -8,6 +8,9 @@ test:
   script:
     - npm run tsc
     - npm run main
+    - npm run test
+    - npm run lint --fix
+    - npm run format
   before_script:
     - npm i --save-dev
     - npm i typescript
