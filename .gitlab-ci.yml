@@ -6,8 +6,7 @@ stages:
 test:
   stage: test
   script:
-    - npm run test
+    - npm run main
   before_script:
-    - chmod u+w D:\onboard__\node_modules
     - npm i
     - npm i jest
