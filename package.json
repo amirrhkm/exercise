@@ -10,7 +10,7 @@
     "test": "jest --coverage",
     "lint": "eslint --ext .js,.ts",
     "format": "prettier --write \"**/*.+(js|ts|json)\"",
-    "main":"node dist/main.js"
+    "main":"node './dist/main.js'"
   },
   "author": "",
   "license": "ISC",
