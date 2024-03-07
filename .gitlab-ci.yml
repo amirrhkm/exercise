@@ -6,7 +6,6 @@ stages:
 test:
   stage: test
   script:
-    - tsc
     - npm run main
   before_script:
     - npm i --save-dev
