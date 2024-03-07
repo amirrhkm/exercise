@@ -6,6 +6,6 @@ stages:
 test:
   stage: test
   script:
-    - npm run main
+    - npm run test
   before_script:
     - npm i
