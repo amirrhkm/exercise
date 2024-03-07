@@ -1,1 +1,1 @@
-export declare function readfile(filename: string): Promise<string[]>
+export declare function readfile(filename: string): Promise<string[]>;
