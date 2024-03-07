@@ -7,7 +7,7 @@
     "amir.nurhakim:registry": " https://gitlab.com/api/v4/projects/688/packages/npm/"
   },
   "scripts": {
-    "test": "jest --coverage",
+    "jest": "jest --coverage",
     "lint": "eslint --ext .js,.ts",
     "format": "prettier --write \"**/*.+(js|ts|json)\"",
     "main":"node './dist/main.js'",
