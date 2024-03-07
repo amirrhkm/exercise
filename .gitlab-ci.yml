@@ -13,4 +13,3 @@ test:
   before_script:
     - npm i --save-dev
     - npm ci
-    - cd onboard__
