@@ -27,4 +27,3 @@ Learn to use 'npm run' by adding scripts in package.json
 ## Thursday (7/3/24)
 Learn to setup .gitlab-ci.yml to execute all the commands to run and test the functions.
 Learn to document each functions using typedoc package.
-
