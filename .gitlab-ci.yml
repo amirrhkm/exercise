@@ -4,4 +4,6 @@ stages:
 test:
   stage: test
   script:
-    - node './dist/main.js'
+    - npm run test
+    - npm run format
+    - npm run lint --fix
