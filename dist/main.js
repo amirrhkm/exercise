@@ -14,7 +14,7 @@ const compNum_1 = require("./compNum");
 const sumNum_1 = require("./sumNum");
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
-        const lineCont = yield (0, readfile_1.readfile)('testnum.txt');
+        const lineCont = yield (0, readfile_1.readfile)('magic_num_4.txt');
         const lineNum = (0, compNum_1.compNum)(lineCont);
         const sum = (0, sumNum_1.sumNum)(lineNum);
         console.log(lineCont);

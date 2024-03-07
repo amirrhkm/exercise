@@ -4,6 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - node './dist/main.js'
-  before_script:
-    - npm install
+    - jest --coverage
