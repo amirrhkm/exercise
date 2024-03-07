@@ -6,8 +6,8 @@ stages:
 test:
   stage: test
   script:
+    - npm run test
     - npm run format
     - npm run lint --fix
-    - npm run test
   before_script:
     - npm i

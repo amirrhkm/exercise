@@ -3,9 +3,9 @@ import { readfile } from './readfile'
 
 
 const mockans = ['abc', 'def', 'hij', 'klm']
-const mockfile = 'D:/nodejs.magicnum/inputFile/testnum.txt'
+const mockfile = 'D:/onboard__/inputFile/testnum.txt'
 describe('readfile function test', () => {
   test('test', async() => {
-    expect(await readfile(mockfile)).toBe(mockans)
+    expect(await readfile(mockfile)).toStrictEqual(mockans)
   })
 })
