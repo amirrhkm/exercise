@@ -1,9 +1,10 @@
 stages:
   - test
-  
+
 test:
   stage: test
   script:
+    - npm i
     - npm run format
     - npm run eslint --fix
     - jest --coverage
