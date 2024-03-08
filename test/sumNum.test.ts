@@ -1,5 +1,5 @@
 import { describe, expect } from '@jest/globals'
-import { sumNum } from './sumNum'
+import { sumNum } from '../lib/sumNum'
 
 let testarr = [1, 2, 3, 4, 5]
 describe('sum function test', () => {

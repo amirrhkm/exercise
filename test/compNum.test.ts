@@ -1,5 +1,5 @@
 import { describe, expect } from '@jest/globals'
-import { compNum } from './compNum'
+import { compNum } from '../lib/compNum'
 
 let testarr = ['19h8cn', '9o4hcn', '13nv93', '47v2b', '2398n6']
 describe('compose magic number test', () => {
