@@ -1,6 +1,5 @@
 import { describe, expect } from '@jest/globals'
 import { readfile } from '../lib/readfile'
-import { readFile } from 'fs/promises'
 
 const mockans = ['abc', 'def', 'hij', 'klm']
 const mockfile = './testnum.txt'
