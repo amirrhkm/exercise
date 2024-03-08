@@ -6,5 +6,5 @@ export async function readfile(filename: string) {
   const filePath = resolve('./inputFile', filename)
   const cont = await readFile(filePath, 'utf8')
   const line = cont.split('\r\n')
-  return line
+  return cont
 }
