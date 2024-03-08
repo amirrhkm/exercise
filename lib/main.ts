@@ -3,7 +3,7 @@ import { compNum } from './compNum'
 import { sumNum } from './sumNum'
 
 async function run() {
-  const lineCont = await readfile('magic_num_2.txt')
+  const lineCont = await readfile('magic_num_3.txt')
   const lineNum = compNum(lineCont)
   const sum = sumNum(lineNum)
 
