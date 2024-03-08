@@ -1,7 +1,6 @@
 image: node:latest
 
-variables:
-  CI_DEFAULT_ENCODING: 'utf-8'
+
 
 stages:
   - test
@@ -17,3 +16,5 @@ test:
   before_script:
     - npm i --save-dev
     - npm ci
+  variables:
+    CI_DEFAULT_ENCODING: 'utf-8'
