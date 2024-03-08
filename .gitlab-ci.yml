@@ -1,5 +1,8 @@
 image: node:latest
 
+variables:
+  CI_DEFAULT_ENCODING: 'utf-8'
+
 stages:
   - test
 
