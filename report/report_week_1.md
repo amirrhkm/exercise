@@ -18,3 +18,8 @@
 ## Thursday (7/3/24)
     On Thursday, I acquired the knowledge to set up the configuration file .gitlab-ci.yml in order to automate the execution of all the necessary commands for GitLab to handle the execution of the code. I am also acquiring the skill of generating code documentation by utilising the TypeDoc package.
 
+## Friday (8/3/24)
+    On Friday, I continued to learn how to document functions using the TypeDoc package, when that is done, I conducted a self-learn on utilising LaTeX on Overleaf. I also conducted troubleshooting on the read file test function to provide a more accurate and expected while sending the code through GitLab CI.
+
+## Result
+    As a result, the tasks can be executed on TypeScript and can successfully provide results for unit testing using the Jest framework. The code for the task is accessible on GitLab, where every change is being pushed. Additionally, GitLab CI is used to execute all the necessary commands. All functions in the code have also been documented using TypeDoc.
